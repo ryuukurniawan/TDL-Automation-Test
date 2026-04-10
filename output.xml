@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.10 on win32)" generated="2026-04-09T19:03:34.350519" rpa="false" schemaversion="5">
+<suite id="s1" name="First-Robotframework-Www" source="C:\Learn_QA\Belajar Robot Framework\first-robotframework-www">
+<suite id="s1-s1" name="Tests" source="C:\Learn_QA\Belajar Robot Framework\first-robotframework-www\tests">
+<suite id="s1-s1-s1" name="Login Test" source="C:\Learn_QA\Belajar Robot Framework\first-robotframework-www\tests\login_test.robot">
+<test id="s1-s1-s1-t1" name="User successfully logged in with valid data" line="11">
+<kw name="User open browser" owner="login_steps">
+<kw name="Open browser test" owner="login_page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-09T19:03:34.591496" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-09T19:03:34.591496" elapsed="1.759417"/>
+</kw>
+<status status="PASS" start="2026-04-09T19:03:34.588508" elapsed="1.762405"/>
+</kw>
+<status status="PASS" start="2026-04-09T19:03:34.588508" elapsed="1.762405"/>
+</kw>
+<kw name="User login with user standard_user and pass secret_sauce" owner="login_steps" source_name="User login with user ${username} and pass ${password}">
+<kw name="Input user" owner="login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-09T19:03:36.355515" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>${fieldUsername}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-09T19:03:36.355515" elapsed="0.152896"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2026-04-09T19:03:36.350913" elapsed="0.157498"/>
+</kw>
+<kw name="Input pass" owner="login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-09T19:03:36.516790" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>${fieldPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-09T19:03:36.516790" elapsed="0.092725"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2026-04-09T19:03:36.508411" elapsed="0.101104"/>
+</kw>
+<kw name="Click login" owner="login_page">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-09T19:03:36.609515" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>${loginButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-09T19:03:36.609515" elapsed="0.099432"/>
+</kw>
+<status status="PASS" start="2026-04-09T19:03:36.609515" elapsed="0.099432"/>
+</kw>
+<status status="PASS" start="2026-04-09T19:03:36.350913" elapsed="0.358034"/>
+</kw>
+<kw name="User successfully logged into the dashboard page" owner="login_steps">
+<kw name="Validate success login" owner="login_page">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-04-09T19:03:36.708947" level="INFO">Verifying element 'class=title' contains exact text 'Products'.</msg>
+<arg>${titleHeader}</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-04-09T19:03:36.708947" elapsed="0.057418"/>
+</kw>
+<status status="PASS" start="2026-04-09T19:03:36.708947" elapsed="0.065929"/>
+</kw>
+<status status="PASS" start="2026-04-09T19:03:36.708947" elapsed="0.065929"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-09T19:03:36.774876" elapsed="2.165725"/>
+</kw>
+<tag>smoke</tag>
+<tag>TC-01</tag>
+<status status="PASS" start="2026-04-09T19:03:34.588508" elapsed="4.352093"/>
+</test>
+<status status="PASS" start="2026-04-09T19:03:34.394507" elapsed="4.548580"/>
+</suite>
+<status status="PASS" start="2026-04-09T19:03:34.384309" elapsed="4.559493"/>
+</suite>
+<status status="PASS" start="2026-04-09T19:03:34.350519" elapsed="4.593283"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">smoke</stat>
+<stat pass="1" fail="0" skip="0">TC-01</stat>
+</tag>
+<suite>
+<stat name="First-Robotframework-Www" id="s1" pass="1" fail="0" skip="0">First-Robotframework-Www</stat>
+<stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">First-Robotframework-Www.Tests</stat>
+<stat name="Login Test" id="s1-s1-s1" pass="1" fail="0" skip="0">First-Robotframework-Www.Tests.Login Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
