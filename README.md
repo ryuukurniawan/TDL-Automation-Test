@@ -12,12 +12,11 @@ Tech Stack & Architecture
 
 Project Structure
 
-TDL_Automation/
-├── Resources/
-│   ├── Elements/     # Menampung Locators (ID, XPath, CSS)
-│   ├── Pages/        # Logika dasar interaksi elemen (Technical Keywords)
-│   └── Steps/        # Definisi langkah Gherkin (Business Keywords)
-└── Tests/            # File utama Test Case (.robot)
+TDL_Automation
+- elements/     # Menampung Locators (ID, XPath, CSS)
+- pages/        # Logika dasar interaksi elemen (Technical Keywords)
+- steps/        # Definisi langkah Gherkin (Business Keywords)
+- tests/        # File utama Test Case (.robot)
 
 Test Scenarios
 
@@ -26,6 +25,11 @@ Skrip ini memvalidasi skenario kritikal berikut:
 - Real-time Data Update: Memastikan Data Grid terupdate secara otomatis saat data di-inject.
 - No Page Refresh: Memvalidasi bahwa aplikasi berjalan secara asynchronous (tidak ada reload halaman).
 - Real-time State Change: Memastikan indikator sistem berubah secara instan.
+
+Prerequisites
+
+Pastikan kamu sudah menginstal Python dan Library yang dibutuhkan:
+pip install robotframework robotframework-seleniumlibrary webdriver-manager
 
 Running the Test
 
